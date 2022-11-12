@@ -5,6 +5,7 @@ import { btnProps } from '../types/props';
 export enum btnVariants {
   primary,
   secondary,
+  minimal,
 }
 
 const handleVariant = (variant?: keyof typeof btnVariants) => {
@@ -23,10 +24,21 @@ const handleVariant = (variant?: keyof typeof btnVariants) => {
       font-weight: 500;
     `;
   }
+  if (variant === 'minimal') {
+    return css`
+      background-color: var(--bgColor, white);
+      color: var(--clrMain);
+      font-weight: 500;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #f7f2f2;
+      }
+    `;
+  }
   return null;
 };
 export const StyledBaseButton = styled.button<btnProps>`
-  ${props => handleVariant(props.variant)}
   border: 0;
   padding: 0.7rem 1.5rem;
   width: fit-content;
@@ -36,6 +48,8 @@ export const StyledBaseButton = styled.button<btnProps>`
   cursor: pointer;
   position: relative;
   overflow: hidden;
+
+  ${props => handleVariant(props.variant)}
 
   span.clicked {
     position: absolute;
