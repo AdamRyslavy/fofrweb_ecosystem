@@ -148,7 +148,7 @@ const updateCacheOnScroll = (children: HTMLElement[]) => {
   cache = prepareEl(children);
   cachedEl = children;
 };
-
+// velký rofl
 export const useTransitionList = () => {
   return <T extends HTMLElement>(parent: T, options?: Partial<init>) => {
     if (!parent) return;
