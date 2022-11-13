@@ -39,7 +39,7 @@ export const Thing = () => {
       transition(ref.current);
     }
   });
-  //hhh
+
   return (
     <>
       <button onClick={() => setData([...data, uniqueId()])}>fill</button>
