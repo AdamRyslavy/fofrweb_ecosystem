@@ -27,6 +27,7 @@ appInit({
 });
 
 //test u
+// commit dva
 
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
