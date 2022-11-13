@@ -26,16 +26,8 @@ appInit({
   },
 });
 
-<<<<<<< HEAD
-//test
-//konflikt
-=======
 //test u
-<<<<<<< HEAD
->>>>>>> 056ff09 (úprava)
-=======
 // commit dva
->>>>>>> e6c439e (commit dva)
 
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
