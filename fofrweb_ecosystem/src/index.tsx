@@ -27,6 +27,7 @@ appInit({
 });
 
 //test
+//konflikt
 
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
