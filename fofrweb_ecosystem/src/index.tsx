@@ -26,7 +26,7 @@ appInit({
   },
 });
 
-//test
+//test u
 
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
