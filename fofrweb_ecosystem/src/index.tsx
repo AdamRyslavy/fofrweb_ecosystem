@@ -26,8 +26,12 @@ appInit({
   },
 });
 
+<<<<<<< HEAD
 //test
 //konflikt
+=======
+//test u
+>>>>>>> 056ff09 (úprava)
 
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
