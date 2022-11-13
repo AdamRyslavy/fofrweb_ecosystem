@@ -26,6 +26,8 @@ appInit({
   },
 });
 
+//test
+
 export const Thing = () => {
   const [data, setData] = useState<string[]>([]);
   const transition = useTransitionList();
